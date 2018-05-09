@@ -1,0 +1,5 @@
+<select>
+  <% Cat.all.each do |cat|%>
+    <option value="<%=cat.name %>"><%=cat.name%></option>
+  <% end %>
+</select> 

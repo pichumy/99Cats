@@ -1,0 +1,10 @@
+<table>
+<% @cats.each do |cat| %>
+  <tr>
+    <td> <a href="<%=cat_url(cat)%>"><%= cat.name %></a></td>
+    <td> <a href="<%=edit_cat_url(cat)%>"> Update </a> </td>
+  </tr>
+<%end%>
+</table>
+
+<a href="<%= new_cat_url %>"> Add Cat </a>
